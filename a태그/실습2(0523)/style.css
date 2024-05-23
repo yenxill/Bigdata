@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+}
+
+.white-1 {
+  background-color: white;
+  padding: 20px;
+  margin: 50px;
+  width: 600px;
+  border-radius: 60px 60px 60px 60px;
+  margin: 0 auto;
+}
+
+.white-2 {
+  padding: 200px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.white-3 {
+  background-color: white;
+  padding: 20px;
+  margin: 50px;
+  width: 800px;
+  border-radius: 60px 60px 60px 60px;
+  margin: 0 auto;
+}
