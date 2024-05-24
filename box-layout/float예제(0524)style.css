@@ -9,13 +9,15 @@
   background-color: cornflowerblue;
   width: 200px;
   height: 500px;
-  
+  float: left;
+  margin-left: 692px;
 }
 
 .three {
   background-color: coral;
   width: 800px;
   height: 500px;
+  margin-left: 892px;
 }
 
 .four {
