@@ -48,6 +48,103 @@
         <div>3</div>
       </div>
     </div>
+
+    <body>
+      <h1>박스 배치하기</h1>
+      <div class="left">
+        
+      </div>
+      
+      <div class="right">
+
+      </div>
+      <h2>2. 오른쪽으로 정렬</h2>
+      <div>
+        <h3>2.1 float으로 오른쪽 정렬</h3>
+        <p>
+          float right 정렬할 때는 먼저 1,2,3번 박스 div를 왼쪽으로 
+          옮긴 후, 부모 박스를 fleat :right로 정렬한다.
+        </p>
+        <div class="box right-float">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="clear">
+        <h3>2.2 inline-block으로 오른쪽 정렬</h3>
+        <p>
+          1. display : inline-block으로 수평 정렬 <br>
+          2. 부모 요소에게 text-align : right로 오른쪽 정렬 <br>
+          3. 본인에게 text-align : left로 1,2,3 글자 왼쪽 정렬 <br>
+        </p>
+        <div class="box right-inline">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          </div>
+        </div>
+
+        <div>
+          <h3>2.3 flex로 오른쪽 정렬</h3>
+          <p>
+            1. 정렬하고 싶은 요소 부모에게 display : flex
+            2. 수평 정렬하는 속성 justify-content : start, center end
+          </p>
+          <div class="box right-flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+      </div>
+      <div class="center">
+        <h2>3. 가운데 정렬</h2>
+        <div>
+          <h3>3.1 float으로 가운데 정렬</h3>
+          <p>
+            1. float에는 center가 없으니 float: left;정렬 <br>
+            2. 부모 요소에 자식 총 width 값을 width : 300px; <br>
+            3. margin : 0 auto 가운데 정렬 / box-sizing : border-box <br>
+          </p>
+          <div class="box center-float">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+      </div>
+      <div class="clear">
+        <h3>3.2 inline-block으로 가운데 정렬</h3>
+        <p>
+          1. display : inline-block(박스 좌측 수평 정렬) <br>
+          2. 정렬할 박스 부모에게 text-align : center; 로 가운데 정렬
+          3. 자신에게 text-align : center로 1,2,3 왼쪽 정렬
+        </p>
+        <div class="box center-inline">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+      </div>
+
+    </div>
+    <div class="flex">
+      <h3>3.3 flex로 가운데 정렬</h3>
+      <p>
+        1. 정렬할 부모 요소에 display : flex <br>
+        2. 
+      </p>
+      <div class="box center-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+  </div>
+  <div class="flex">
+    <h1>Flex</h1>
+    <div class="box flex-box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
   </div>
 </body>
 </html>
