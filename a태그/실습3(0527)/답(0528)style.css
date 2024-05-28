@@ -43,3 +43,62 @@ a {
   color: dodgerblue;
   text-decoration: underline;
 }
+
+.back-img {
+  height: 600px;
+  background-image: url(./사진/배경화면.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-txt {
+  display: flex;
+  /*수직 정렬 (row:수평정렬)*/
+  flex-direction: column;
+  /*가운데 정렬*/
+  justify-content: center;
+  align-items: center;
+  /* align-items 같이 안써도 됨
+   text-align: center; */
+  height: 600px;
+  color: #fff;
+}
+
+.back-txt p,
+.back-txt button {
+  margin-top: 20px;
+  font-size: 18px;
+} 
+
+/* 둘이 따로 작성 가능
+.back-txt p {
+  margin-top: 20px;
+  font-size: 18px;
+} 
+/*.back-txt button {
+  margin-top: 20px;
+}*/
+
+.back-txt button {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.second-box {
+  width: 500px;
+  /* marjin : top right bottom left*/
+  margin: -66px auto  0 auto;
+  /*top,bottom left right*/
+  padding: 40px 36px;
+  text-align: center;
+  color: #fff;
+  /* 모서리 */
+  border-radius: 20px;
+  background-color: #000; 
+}
+
+.second-box p {
+  /* 간격 */
+  margin-top: 20px;
+}
