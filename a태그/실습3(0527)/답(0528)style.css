@@ -102,3 +102,43 @@ a {
   /* 간격 */
   margin-top: 20px;
 }
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.card-list div {
+  width: 300px;
+  /* 사이 간격 */
+  margin: 0 20px;
+  padding: 50px 16px;
+  color:#fff;
+  background-color: #000;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-list p { 
+  margin-top: 20px;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link a {
+  color: #fff;
+   /* 사이 간격 */
+  padding: 0 12px;
+}
