@@ -1,0 +1,57 @@
+body {
+  background-color: whitesmoke;
+}
+
+li {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #282828;
+  
+}
+
+.logo img {
+  width: 80px;
+}
+
+.menu-list li {
+  display: inline-block; 
+  /* width: 10px;
+  height: 10px; */
+  box-sizing: border-box;
+  border: 4px solid skyblue;
+  color: #fff;
+}
+
+.back-img {
+  /* width: 2320px; */
+  height: 400px;
+  background-image: url(./사진/배경화면.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  /* float: left; */
+  padding: 100px 0;
+}
+
+.title {
+  color: #fff;
+  margin: 60px auto;
+}
+
+.title1 {
+  width: 80px;
+  /* height: 40px; */
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  margin: 60px auto;
+}
