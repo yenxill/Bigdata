@@ -1,7 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.global-header {
+  display: flex;
+  /*수평 양 끝 정렬*/
+  justify-content: space-between;
+  /*수직 가운데 정렬*/
+  align-items: center;
+  /*padding 상하, 좌우 */
+  padding: 12xp 20px;
+  background-color: #333;
+}
+
 .logo img {
-  width: 80px;
+  width: 60px;
+}
+
+.gnb-list {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.gnb-list li a {
+  color: #fff;
+  font-weight: 700;
+  /* padding: 0 20px; */
+}
+
+.gnb-list li a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
 }
