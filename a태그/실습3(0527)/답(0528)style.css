@@ -142,3 +142,8 @@ a {
    /* 사이 간격 */
   padding: 0 12px;
 }
+
+@media screen and(max-width : 768px) {
+
+
+}
