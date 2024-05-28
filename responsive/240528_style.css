@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+
+}
+
+.global-header, 
+.global-footer {
+  background-color:skyblue;
+  color: #fff;
+  font-size: 36px;
+  
+}
+
+.back-img {
+  height: 500px;
+  background-image: url(./사진/사진\ 01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no repeat;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.card-list div {
+  width: 30%;
+  height: 200px;
+  border: 1px solid skyblue;
+}
+
+/* .global-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-size: 30px;
+  background-color: skyblue;
+  color: #fff;
+} */
