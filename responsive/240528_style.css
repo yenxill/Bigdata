@@ -13,7 +13,7 @@ body {
   background-color:skyblue;
   color: #fff;
   font-size: 36px;
-  
+  padding: 30xp 0;
 }
 
 .back-img {
@@ -45,3 +45,42 @@ body {
   background-color: skyblue;
   color: #fff;
 } */
+
+/* break point : 1200px/ 768px 
+  1200px 이상 : desktop
+  768px  ~ 1200px : tablet
+  768이하 : Mobile
+
+  1. max-width : (D->T->M) 최대
+  2. min-width : (M->T->D) 최소
+
+*/
+
+/* 최대 1200px/ 1200px 이하 부터 적용할 스타일*/
+@media screen and (max-width : 1200px) {
+  .global-header, 
+  .global-footer {
+    background-color: red;
+    color: #fff;
+    font-size: 24px;
+    padding: 20xp 0; 
+}
+.back-img {
+  height: 400px;
+  background-image: url(./사진/사진\ 02.jpg);
+}
+}
+
+@media screen and (max-width : 768px) {
+  .global-header, 
+  .global-footer {
+    background-color: peachpuff;
+    color: #fff;
+    font-size: 24px;
+    padding: 20xp 0; 
+}
+.back-img {
+  height: 400px;
+  background-image: url(./사진/사진\ 03.png);
+}
+}
