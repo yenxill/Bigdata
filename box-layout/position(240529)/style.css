@@ -18,6 +18,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: 20;
   background-color: antiquewhite;
 }
 
@@ -31,9 +32,10 @@
 .box3 {
   /* sticky 부모의 높이 값까지만 따라옴 */
   position: sticky;
-  top: 20px;
+  top: 0;
   left: 0;
-  background-color: blueviolet;
+  z-index: 20;
+  background-color: yellowgreen;
 }
 
 .scroll {
