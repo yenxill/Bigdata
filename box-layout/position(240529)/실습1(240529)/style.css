@@ -7,18 +7,35 @@ li {
   list-style: none;
 }
 
+.position div p {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pbox1 {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
 .photo img {
   width: 70px;
 }
 
-.list1{
+.list1 {
   display: flex;
   justify-content: space-between;
   width: 320px;}
 
 .list1 li a {
   color: #fff;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -46,6 +63,10 @@ li {
   justify-content: center;
   align-items: center;
   height: 600px;
+}
+
+.back-txt h1 {
+  font-size: 70px;
 }
 
 .back-txt p,
