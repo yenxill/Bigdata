@@ -1,0 +1,259 @@
+.noto-sans-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: skyblue;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.gnb-list {
+  display: flex;
+}
+
+.gnb-list li {
+  margin-right: 20px;
+}
+
+.gnb-list li:last-child {
+  margin-right: 0;
+}
+
+.gnb-list li a {
+  font-weight: 700;
+  transition: color 300ms;
+}
+
+.gnb-list li a:hover {
+  color: dodgerblue;
+}
+
+.back-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(./assets/images/스누피배경.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.back-img h2 {
+  font-size: 42px;
+}
+
+.back-img p {
+  width: 800px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.popup-open-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.card-list div {
+  width: 30%;
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+  background-color: rgb(203, 234, 247);
+}
+
+.card-list div p {
+  margin-top: 12px;
+}
+
+.fix-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgb(185, 235, 255);
+}
+
+.fix-box div {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-attachment: fixed;
+}
+
+.fix-img1 {
+  margin-right: 20px;
+  background-image: url(./assets/images/pngegg.png);
+  background-position: bottom left 260px;
+}
+
+.fix-img2 {
+  background-image: url(./assets/images/스누피2.png);
+  background-position: bottom right 240px;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: skyblue
+}
+
+.sns-link {
+  display: flex;
+
+}
+
+.sns-link li a {
+  padding: 12px ;
+}
+
+.sns-link li a i {
+  font-size: 24px;
+  transition: color 300ms;
+}
+
+.sns-link li a i:hover {
+  color: dodgerblue;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.top-btn a i {
+  color: rgb(57, 182, 231);
+  font-size: 40px;
+}
+
+.quick-menu {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+}
+
+
+.quick-menu ul {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+
+}
+
+.quick-menu ul a {
+  color: #333;
+}
+
+@media screen and (max-width : 1200px) {
+  .card-list {
+    width: 70%;
+    flex-direction: column;
+  }
+  
+  .card-list div {
+    width: 100%;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .fix-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(185, 235, 255);
+  }
+  
+  .fix-box div {
+    background-color: transparent;
+  }
+  
+  .fix-img1 {
+    margin-right: 0;
+    background-image: url(./assets/images/pngegg.png);
+    background-position: bottom center;
+  }
+  
+  .fix-img2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .card-list {
+    width: 90%;
+  }
+
+  .global-footer {
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .sns-link li a {
+    padding: 8px ;
+  }
+  
+  .sns-link li a i {
+    font-size: 20px;
+  }
+
+  .quick-menu {
+    display: none;
+  }
+}
