@@ -1,0 +1,28 @@
+.one {
+  background-color: aquamarine;
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.two {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 500px;
+  float: left;
+  margin-left: 385px;
+}
+
+.three {
+  background-color: coral;
+  width: 890px;
+  height: 500px;
+  margin-left: 492px;
+}
+
+.four {
+  background-color: lightgreen;
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+}
