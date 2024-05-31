@@ -22,8 +22,14 @@ li {
 }
 
 button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+/* 모바일 버전에서만 보일 요소 (D,T모드에서는 보이지 않게 NONE)*/
+.sm-only {
+  display: none;
 }
 
 body {
@@ -236,6 +242,10 @@ body {
 }
 
 @media screen and (max-width : 768px) {
+  .sm-only {
+    display: block;
+  }
+
   .card-list {
     width: 90%;
   }
@@ -286,4 +296,31 @@ body {
 
 .popup-close-btn {  
   font-size: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0 ;
+  right: 0 ;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.sidebar ul li a {
+  display: inline-block;
+  padding:  8px 0;
+  color: #000;
+  font-size: 18px;
+}
+
+.sidebar-close-btn {
+  text-align: right;
+  font-size: 22px;
+
+}
+
+.sidebar ul li {
+  text-align: center;
 }
