@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.logo img {
+  width: 50px;
+}
+
+.gnb-list {
+  display: flex;
+}
+.gnb-list li {
+  margin-right: 20px;
+}
+.gnb-list li:last-child {
+  margin-right: 0;
+}
+.gnb-list li a {
+  font-size: 700;
+  transform: color 300ms;
+}
+.gnb-list li a:hover {
+  color: dodgerblue;
+}
+
+
+.back-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/back.jpeg);
+}
+.back-img li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.card-list img {
+  width: 30%;
+  box-shadow: 3px 3px 3px lightgrey;
+  border-radius: 20px;
+  background-color: #fff;
+}
