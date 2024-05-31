@@ -242,8 +242,18 @@ body {
 }
 
 @media screen and (max-width : 768px) {
+  .sm-hidden {
+    display: none;
+  }
+
   .sm-only {
     display: block;
+  }
+
+  .sidebar-open-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .card-list {
@@ -302,10 +312,17 @@ body {
   position: fixed;
   top: 0 ;
   right: 0 ;
+  /*왼쪽으로 이동할 때는 마이너스 값을 사용한다.*/
+  transform: translateX(300px);
   width: 300px;
   height: 100%;
   padding: 20px;
   background-color: #fff;
+  transition: transform 300ms;
+}
+
+.sidebar.is-active {
+  transform: translateX(0);
 }
 
 .sidebar ul li a {
@@ -318,6 +335,7 @@ body {
 .sidebar-close-btn {
   text-align: right;
   font-size: 22px;
+  cursor: pointer;
 
 }
 
