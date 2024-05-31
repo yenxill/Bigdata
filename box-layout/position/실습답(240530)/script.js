@@ -34,6 +34,19 @@ sidebarCloseBtn.addEventListener('click',function() {
   sidebar.classList.remove('is-active');
 })
 
+function openSidebar() {
+  //1. sidebar라는 클래스에 is-active 클래스 추가
+  sidebar.classList.add('is-active');
+}
+
+function Closesidebar() {
+  //1. sidebar라는 클래스에 is-active 클래스 제거
+  sidebar.classList.remove('is-active');
+}
+
+sidebarOpenBtn.addEventListener('click', openSidebar);
+sidebarCloseBtn.addEventListener('click', Closesidebar);
+
 // 함수 소괄호 안 : 매개 변수
 function plus (num1,num2) {
   console.log( num1,num2 )
