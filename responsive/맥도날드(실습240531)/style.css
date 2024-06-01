@@ -137,7 +137,14 @@ li {
 
 .pbox1,
 .pbox2 {
-  
+  font-size: 17px; 
+}
+
+.pbox1 p,
+.pbox2 p {
+  font-size: 17px;
+  margin: 7px;
+  margin-left: auto;
 }
 
 .sns-link {
@@ -155,7 +162,6 @@ li {
 .sns-link li a i {
   font-size: 24px;
   transition: color 300ms;
-
 }
 
 .sns-link li a i:hover {
