@@ -74,7 +74,7 @@ let arr = ['yeji', 121, 'dadd', txt];
 console.log(arr[2])
 
 //{key : value}
-let tel = 01055256624 ;
+// let tel = 01055256624 ;
 
 let obj = { 
   이름 : 'yi',
