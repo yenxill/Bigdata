@@ -1,0 +1,32 @@
+* {
+  margin: 0 ;
+  padding: 0 ;
+} 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border: 2px solid #ccc;
+}
+
+.mode-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header.dark {
+  color: #fff;
+  background-color: #333;
+
+}
+
+header.dark .mode-btn  {
+  color: #333;
+  background-color: #fff;
+
+}
