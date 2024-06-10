@@ -23,11 +23,12 @@ userid.addEventListener('focusout', function() {
     idWarn.innerHTML = `<span class="txt-red">아이디를 8글자 이상 입력하세요.</span>`;
     } else {
     // 8글자 이상일 때 '멋진 아이디네요!' (color : green)
-    idVeri = true;
     idWarn.innerHTML = `<span class="txt-green">멋진 아이디네요!</span>`;
+    idVeri = true;
   }
 })
 
+// 비밀번호
 let userpw = document.getElementById('userpw');
 let pwWarn = document.querySelector('.pw-warn');
 // console.log(pwWarn)
@@ -66,12 +67,12 @@ userPwChk.addEventListener('focusout', function(){
     pwChkWarn.innerHTML = '';
   } else {
     //일치하지 않을 때 => 비밀번호가 일치하지 않습니다
-    pwChkWarn.innerHTML = `<span class = "txt-red">비밀번호가 일치하지 않습니다</span>`;
+    pwChkWarn.innerHTML = `<span class="txt-red">비밀번호가 일치하지 않습니다</span>`;
     pwChVeri = true;
   }
 })
 
-
+// 생년월일
 let year = document.getElementById('year');
 let month = document.getElementById('month');
 let date = document.getElementById('date');
@@ -111,25 +112,26 @@ for(let i = 1; i <= 31; i++) {
 //취미
 // 5개까지만 체크 되도록
 // alert('최대 5개까지만 선택할 수 있습니다.'
-let checkBoxs = document.querySelectorAll('input[type="checkbox"][name="hobby"]')
+let checkBoxs = document.querySelectorAll('input[type="checkbox"][name="hobby"]');
 //console.log(checkBoxs)
 let maxCount = 5;
 
 checkBoxs.forEach((item) => {
   console.log(item);
   item.addEventListener('change', () => {
-    let checkCount = document.querySelectorAll('input[type="checkbox"][name="hobby"]:checked').length;
-    //console.log(checkCount)
+  let checkCount = document.querySelectorAll('input[type="checkbox"][name="hobby"]:checked').length;
+  //console.log(checkCount)
 
+  // alert('최대 5개까지만 선택할 수 있습니다.')
     if(checkCount > maxCount) {
-      item.checked = false;
-      alert('최대5개까지만 선택할 수 있습니다.');
+      item.checked = false; // 6번째 체크박스 체크 해제
+      alert('최대 5개까지만 선택할 수 있습니다.');
     }
   })
 })
 
 let submitBtn = document.getElementById('submit-btn');
-let joinForm = document.getElementById('join-Form');
+let joinForm = document.getElementById('join-form');
 //console.log(joinForm)
 
 submitBtn.addEventListener('click', (e) => {
